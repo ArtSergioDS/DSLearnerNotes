@@ -10,12 +10,12 @@
           <div id="python-collapse" class="collapse">
             <ul class="list-unstyled fw-normal pb-1 small">
               <li class="mb-1">
-                <a class="d-inline-flex align-items-center rounded" href="/">
+                <a class="d-inline-flex align-items-center rounded" (click)="changeRoute('')">
                   Pandas
                 </a>
               </li>
               <li>
-                <a class="d-inline-flex align-items-center rounded">
+                <a class="d-inline-flex align-items-center rounded" (click)="changeRoute('2')">
                   Matplotlib
                 </a>
               </li>
@@ -45,7 +45,8 @@
       </ul>
     </nav>
   </aside>
-  <main class="bd-main order-1">
-  <!--Contenido de los artículos-->
+  <main>
+    <!--Contenido de los artículos-->
+    <router-outlet></router-outlet>
   </main>
 </div>
